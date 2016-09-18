@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>合格投资者认定</title>
+<style type="text/css">
+body{margin:0px;}
+#bg{width:100%;height:100%;top:0px;left:0px;position:absolute;filter: Alpha(opacity=50);opacity:0.5; background:#000000; display:block;}
+#popbox{width: 70%; height: 70%;
+    position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto; display:block; background:#FFFFFF;}
+/*m#width:50%; height:340px;margin:auto; popbox{position:absolute;width:80%; height:400p*/
+.ptitle {
+    /*margin: auto;*/
+    font-weight: 600;
+}
+.f1220151209 {
+    font-size: 25px;
+}
+.tc20151209 {
+    text-align: center;
+}
+.f2420151209 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.fyh20151209 {
+    font-family: Microsoft YaHei,Arial, Helvetica, sans-serif;
+}
+.center{
+    margin:auto;
+    width:30%;
+}
+</style>
+<script type="text/javascript">
+function pupclose(){
+    if(document.getElementById("treaty").checked){
+    document.getElementById("bg").style.display="none";
+    document.getElementById("popbox").style.display="none" ; 
+    location.href='http://mp.weixin.qq.com/s?__biz=MzIxNzEwNTQ2Mg==&mid=505226666&idx=1&sn=cda6707cc29a1a610aa1496aeb680dfa&scene=18#wechat_redirect';
+}else{
+    // alert("请先同意《合格投资者认定》！")
+}
+}
+function check()
+  {
+  if(document.getElementById("treaty").checked){
+    // document.getElementById("button1").style.backgroundColor="green";
+    document.getElementById("button1").style.color="black";
+    // document.getElementById("button1").disabled=true;
+  }else{
+    // document.getElementById("button1").style.backgroundColor="gray";
+    document.getElementById("button1").style.color="#D3D3D3";
+    // document.getElementById("button1").disabled=false;
+  }
+}
+</script>
+</head>
+<body>
+</br>
+</br>
+</br>
+<div id="bg"></div>
+<div id="popbox" >
+<!-- <div id="popbox" style="width:424px;float:right;text-align:left;padding: 0; background: #fff;    height: 340px;line-height: 20px;"> -->
+                 <!-- 合格投资者认定 -->                    <div style="height:10%;"><p class="ptitle" style="text-align:center;color:#666666;font-size: 29px;font-family: 微软雅黑,黑体,Arial, Helvetica, sans-serif;"><span style="font-size: 33px">合格投资者认定</span></p></div>               <div style="width:100%-20px;height:70%;overflow-y:scroll;padding:0 6px;border-top: 1px #ddd solid;">                      <p class="f1220151209" style="line-height: 30px; text-indent: 30px;">                       根据《私募投资基金监督管理暂行办法》第四章第十四条规定："私募基金管理人、私募基金销售机构不得向合格投资者之外的单位和个人募集资金，不得通过报刊、电台、电视、互联网等公众传播媒体或者讲座、报告会、分析会和布告、传单、手机短信、微信、博客和电子邮件等方式，向不特定对象宣传推介。"</p>                     <p class="f1220151209" style="color: #e60012; text-indent: 20px;">弗问谨遵《私募投资基金监督管理暂行办法》之规定，只向特定的合格投资者宣传推介相关私募投资基金产品。</p>
+                    <p class="f1220151209" style="text-indent: 20px;">阁下如有意进行私募投资基金投资且满足《私募投资基金监督管理暂行办法》关于"合规投资者"标准之规定，即具备相应风险识别能力和风险承担能力，投资于单只私募基金的金额不低于100 万元，且个人金融类资产不低于300万元或者最近三年个人年均收入不低于50万元人民币。请阁下详细阅读本提示，方可获得弗问资本产品宣传推介服务。                        </p>                 </div>                 <div style="height:15%;border: 1px #ddd solid;border-left:none;">                      <p class="tc20151209" style="padding:0;text-indent: 20px;height: 30px;line-height:19px;">                           <input name="treaty" type="checkbox" checked="checked" id="treaty" onclick="check()">                         <span class="f2420151209 fyh20151209" style="color: #454850; font-family: 微软雅黑, 黑体,">                           <label for="treaty">我已阅读并接受此认定书</label></span><br>
+                        <button id="button1" class="center" style="height:40px;font-size:25px;" type="button" onclick="pupclose()">确定</button>                      </p>                 </div>
+</div>
+</body>
+</html>
